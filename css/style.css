@@ -55,6 +55,11 @@ h6 {
     color: #282c34;
 }
 
+img {
+    margin-top: 15%;
+    max-width: 400px;
+}
+
 .typed {
     overflow: hidden;
     white-space: nowrap;
