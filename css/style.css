@@ -1,8 +1,9 @@
 body {
     margin: 0px;
+    padding: -1px;
     background-color: #282c34;
     color: rgba(25, 17, 17, 0.7);
-    background-image: linear-gradient(to bottom, rgba(21, 19, 19, 0.7) 0%, rgba(255, 255, 255, 0.9) 100%);
+    background-image: linear-gradient(to bottom, rgba(21, 19, 19, 0.7) 25%, rgba(255, 255, 255, 0.9) 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -34,6 +35,19 @@ body {
     font-weight: 800;
     font-size: xx-large;
     color: #282c34;
+}
+
+
+.later {
+    font-size: 32px;
+    transition: 800ms;
+    height: 100px;
+    line-height: 200px;
+}
+
+.later:hover {
+    font-size: 38px;
+    transition: 800ms;
 }
 
 h3 {
@@ -82,6 +96,11 @@ h6 {
     animation-fill-mode: forwards;
 }
 
+.circle {
+    width: 10px;
+    height: 10px;
+}
+
 @keyframes typing {
     from {
         width: 0
@@ -92,6 +111,10 @@ h6 {
     }
 }
 
+/* .hero {
+    background-color: rgb(185, 185, 185);
+} */
+
 .container-skills {
     margin: 10px;
     width: 170px;
@@ -101,19 +124,22 @@ h6 {
     font-weight: 500;
     font-size: 20px;
     text-align: center;
-    border-radius: 10px;
-    line-height: 20px;
+    border-radius: 6px;
+    line-height: 10px;
     align-items: center;
     display: inline-block;
     justify-content: space-evenly;
-    filter: drop-shadow(5px 5px 5px rgba(135, 118, 118, 1));
+    filter: drop-shadow(2px 2px 3px rgba(135, 118, 118, 1));
     transition: 800ms;
+    border: #ddd solid 1px;
 }
 
 .container-skills:hover {
-    transition: 500ms;
+    transition: 800ms;
     color: #282c34;
     background-color: #ddd;
+    /* line-height: 15px; */
     filter: drop-shadow(5px 15px 15px rgba(35, 18, 18, 1));
     transform: translateY(-5px);
+    border: #282c34 solid 1px;
 }
