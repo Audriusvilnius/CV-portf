@@ -55,10 +55,21 @@ h6 {
     color: #282c34;
 }
 
-img {
+.image {
     margin-top: 15%;
     margin-bottom: 15%;
     max-width: 400px;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+    transition: 800ms;
+}
+
+.grayscale:hover {
+    filter: grayscale(0%);
+    opacity: 90%;
+    transition: 800ms;
 }
 
 .typed {
@@ -95,5 +106,14 @@ img {
     align-items: center;
     display: inline-block;
     justify-content: space-evenly;
-    filter: drop-shadow(5px 5px 10px rgba(135, 118, 118, 1));
+    filter: drop-shadow(5px 5px 5px rgba(135, 118, 118, 1));
+    transition: 800ms;
+}
+
+.container-skills:hover {
+    transition: 500ms;
+    color: #282c34;
+    background-color: #ddd;
+    filter: drop-shadow(5px 15px 15px rgba(35, 18, 18, 1));
+    transform: translateY(-5px);
 }
